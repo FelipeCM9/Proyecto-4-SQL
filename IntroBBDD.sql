@@ -41,6 +41,7 @@ SELECT city ->> 'en' AS ciudad, COUNT(*) AS airports
 FROM airports_data
 GROUP BY city ->> 'en'
 HAVING COUNT(*) > 1
+ORDER BY airports DESC
 
 -- Ejercicio 7 --
 -- Enunciado:
